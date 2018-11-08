@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 /* GET users listing. */
-router.get('/api/currentUser',()=>{
+/* GET users listing. */
+router.get('/api/currentUser',(req,res,next)=>{
   res.send({
     name: '杨斌',
     avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
